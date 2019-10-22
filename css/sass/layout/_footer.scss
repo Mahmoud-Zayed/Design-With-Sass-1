@@ -1,0 +1,126 @@
+/* Start Footer */
+.footer {
+    background-color: #e2e2e2;
+    overflow-x: hidden;
+    padding-top: 35px;
+    margin-top: 50px;
+    .gallery, .info, .contact {
+        float: $float-left;
+    }
+    .gallery {
+        @media (min-width: $minSmall) {
+            width: 100%;
+        }
+        @media (min-width: $minMedium) {
+            width: 50%;
+        }
+        .img-box {
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+                @media (min-width: $minSmall) {
+                    float: $float-left;
+                }
+                width: 150px;
+                height: 150px;
+            }
+            .text {
+                @media (min-width: $minSmall) {
+                    float: $float-left;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    width: calc(100% - 180px);
+                }
+                h4 {
+                    color: $redColor;
+                    margin: 10px 0 0px;
+                }
+                p {
+                    color: #a09393;
+                    margin-top: 9px;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+    .info {
+        @media (max-width: $maxMobile) {
+            float: $float-left;
+            width: 100%;
+        }
+        @media (min-width: $minSmall) {
+            width: 50%;
+            padding-right: 10px;
+        }
+        @media (min-width: $minMedium) {
+            width: 25%;
+        }
+        ul {
+            color: #a09393;
+            line-height: 1.8;
+            li {
+                span {
+                    color: $redColor;
+                }
+            }
+        }
+        h4 {
+            color: #555;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        p {
+            color: #a09393;
+            margin-top: 10px;
+        }
+    }
+    .contact {
+        @media (min-width: $minSmall) {
+            width: 50%;
+        }
+        @media (min-width: $minMedium) {
+            width: 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border: 1px solid #c9c9c9;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        textarea {
+            height: 140px;
+        }
+        .main-button {
+            width: 100%;
+        }
+    }
+    .section-title {
+        color: #555;
+        font-weight: bold;
+    }
+    .copyright {
+        padding: 25px 0;
+        border-top: 1px solid #999;
+        overflow: hidden;
+        color: #555;
+        margin-top: 30px;
+        .text,
+        .author {
+            @media (max-width: $maxMobile) {
+                width: 100%;
+                text-align: center !important; 
+            }
+            float: $float-left;
+            width: 50%
+        }
+        .author {
+            @media (max-width: $maxMobile) {
+                margin-top: 10px;
+            }      
+        }
+    }
+}
+/* End Footer */

@@ -1,0 +1,142 @@
+
+/* Start Slider */
+.slider {
+    blockquote {
+        font: {
+            size: 20px;
+            style: italic;
+            weight: bold;
+            family: Tahoma, Arial;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%;
+        margin: 30px auto;
+    }
+    img {
+        max-width: 100%;
+        height: 350px;
+    }
+    .bullets {
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: $greyColor;
+            border-radius: 50%;
+            border: 3px solid $greyColor;
+            cursor: pointer;
+            &.active,
+            &:hover {
+                background-color: #fff;
+                border: 3px solid #333;
+            }
+        }
+    }
+}
+/* End Slider */
+
+/* Start Services */
+.services {
+    padding-top: 35px;
+    .service-box {
+        @media (min-width: $minMedium) {
+            float: $float-left;
+            width: (100% / 3);
+            &:not(:last-of-type) {
+                padding-right: 20px;
+            }
+        }
+        @media (max-width: $maxMobile) {
+            width: 100%;
+            float: none;
+            i {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        .service-title {
+            color: #555;
+            i {
+                font-size: 35px;
+                position: relative;
+                top: 4px;
+                margin-right: 8px;
+            }
+        }
+        .service-desc {
+            color: #a09393;
+            line-height: 1.5;
+        }
+        .link {
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+/* End Services */
+
+/* Start Our Players */
+.our-players {
+    padding-top: 40px;
+    .player-box {
+        @media (min-width: $minSmall) {
+            float: $float-left;
+            width: (100% / 2);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        @media (min-width: $minMedium) {
+            width: (100% / 3);
+            text-align: $text-left;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media (max-width: $maxMobile) {
+            margin-bottom: 40px;
+        }
+        .player-img {
+            max-width: 100%;
+            width: 300px;
+            height: 200px;
+        }
+        .player-title {
+            color: #555;
+            font-weight: normal;
+            span {
+                font-weight: bold;
+            }
+        }
+        .player-desc {
+            color: #a09393;
+            line-height: 1.5;
+        }
+        .link {
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+/* End Our Players */
+
+/* Start Lorem Ipsum */
+.lorem-ipsum {
+    padding-top: 35px;
+    .lorem-box {
+        @media (max-width: $maxMobile) {
+          width: 100%;
+          float: none;
+          padding-top: 4%;
+        }
+        float: $float-left;
+        width: (94% / 3);
+        margin-right: 1%;
+        margin-left: 1%;
+        img {
+            width: 100%;
+        }
+    }
+}
+/* End Lorem Ipsum */

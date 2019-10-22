@@ -1,0 +1,58 @@
+/* Start Header */
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right; } }
+
+.header .the-toggler {
+  right: auto;
+  left: 15px; }
+
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right; } }
+
+.header .navbar li {
+  float: right; }
+
+/* End Header */
+/* Start Services */
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right; } }
+
+/* End Services */
+/* Start Our Players */
+@media (min-width: 768px) {
+  .our-players .player-box {
+    float: right; } }
+
+@media (min-width: 992px) {
+  .our-players .player-box {
+    text-align: right; } }
+
+/* End Our Players */
+/* Start Lorem Ipsum */
+.lorem-ipsum .lorem-box {
+  float: right; }
+
+/* End Lorem Ipsum */
+/* Start Footer */
+.footer .gallery, .footer .info, .footer .contact {
+  float: right; }
+
+@media (min-width: 768px) {
+  .footer .gallery .img-box img {
+    float: right; } }
+
+@media (min-width: 768px) {
+  .footer .gallery .img-box .text {
+    float: right; } }
+
+@media (max-width: 767px) {
+  .footer .info {
+    float: right; } }
+
+/* End Footer */
+
+/*# sourceMappingURL=homepage-rtl.css.map */
